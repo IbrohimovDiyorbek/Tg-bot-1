@@ -1,9 +1,9 @@
 import asyncio
 import logging
-
 from aiogram import Bot, Dispatcher
 from aiogram.client.default import DefaultBotProperties
 from aiogram.enums import ParseMode
+ 
 from handlers.start import router
 
 TOKEN = "7620217998:AAEytAOGAw7-KM6AU_LZ7LHQ6lfLhE7K9O8"
@@ -13,9 +13,7 @@ dp = Dispatcher()
 
 
 async def main():
-
-    dp.include_routers(router)
-
+    dp.include_router(router)
     await dp.start_polling(bot)
 
 

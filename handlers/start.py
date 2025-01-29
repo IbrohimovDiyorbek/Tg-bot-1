@@ -35,20 +35,20 @@ async def name(message: Message):
 
 
 @router.message(lambda message: message.text == "РУС")
-async def uzb(message: Message):
+async def rus(message: Message):
     await message.answer("Укажите вес груза:", reply_markup=name_buttons)
 
 
 @router.message(lambda message: message.text == "Услуги по переезду дома")
-async def name(message: Message):
+async def name_rus(message: Message):
     await message.answer("Tel: 900270350")
 
 
 @router.message(lambda message: message.text == "До 3 тонн")
-async def name(message: Message):
+async def name_rus(message: Message):
     await message.answer("Tel: 900270350")
 
 
 @router.message(lambda message: message.text == "3 Tonna +")
-async def name(message: Message):
+async def name_rus(message: Message):
     await message.answer("Tel: 900270350")
