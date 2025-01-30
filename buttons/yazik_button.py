@@ -5,7 +5,7 @@ name_buttons = ReplyKeyboardMarkup(
         [
             KeyboardButton(text="Услуги по переезду дома"),
             KeyboardButton(text="До 3 тонн"),
-            KeyboardButton(text="3 Tonna +")
+            KeyboardButton(text="3 Toннa +")
         ],
     ],
     resize_keyboard=True,
